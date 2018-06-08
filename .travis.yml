@@ -4,9 +4,6 @@
 #    - "3.6"
   os:
   #- linux
-  before_install:
-  - brew update
-  - brew install beanstalk
   install:
     - pip install -r requirements.txt
   script:
