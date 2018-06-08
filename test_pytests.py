@@ -63,7 +63,7 @@ class TestCalculatorService():
 
     @pytest.mark.parametrize("x", (
             {"input": -100, "expected": "10i"},
-            {"input": -20, "expected": "6i"}
+            {"input": -36, "expected": "6i"}
     ), ids=idfn_x)
     def test_sqrt_negative(self, x):
         actual_value = CalculatorService.sqrt(self.URL, x.get('input'))
