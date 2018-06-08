@@ -7,4 +7,4 @@
   install:
     - pip install -r requirements.txt
   script:
-    - py.test -v --rounding_index 50
+    - py.test -v --rounding_index 10000
