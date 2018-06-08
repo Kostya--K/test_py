@@ -1,6 +1,7 @@
   language: python
   python:
-    - "stable"
+    - "3.6"
+    - "2.7"
   os:
   - linux
   install:
