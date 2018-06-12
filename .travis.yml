@@ -21,8 +21,6 @@
     - "sh -e /etc/init.d/xvfb start"
     - sleep 3
     - fluxbox >/dev/null 2>&1 &
-    - sudo apt install htop -yy
-    - htop
   install:
   - pip install -r requirements.txt
   script:
