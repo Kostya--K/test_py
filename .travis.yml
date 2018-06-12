@@ -7,7 +7,6 @@
   os:
   - linux
   addons:
-    firefox: latest
     apt:
       sources:
        - google-chrome
