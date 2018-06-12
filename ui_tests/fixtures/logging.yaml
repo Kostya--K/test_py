@@ -1,0 +1,23 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+    func_formatter:
+        format: "%(asctime)s - %(message)s"
+
+handlers:
+    func_handler:
+        class: logging.FileHandler
+        level: DEBUG
+        formatter: func_formatter
+        filename: {FILE_PATH}
+        encoding: utf8
+
+loggers:
+    func_logger:
+        level: DEBUG
+        handlers: [func_handler]
+
+root:
+   level: DEBUG
+   handlers: [func_handler]
