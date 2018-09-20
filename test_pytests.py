@@ -84,10 +84,14 @@ class TestCalculatorService():
     def test_error_messages(self, x, y, rounding_index):
         assert_that(CalculatorService.divide(self.URL, x, y, rounding_index).get('error'),
                     has_string("Error: Undefined symbol {}".format(y)))
+        
         assert_that(CalculatorService.add(self.URL, x, y, rounding_index).get('error'),
                     has_string("Error: Undefined symbol {}".format(y)))
+        
         assert_that(CalculatorService.multiply(self.URL, x, y, rounding_index).get('error'),
                     has_string("Error: Undefined symbol {}".format(y)))
+        
         assert_that(CalculatorService.subtract(self.URL, x, y, rounding_index).get('error'),
                     has_string("Error: Undefined symbol {}".format(y)))
+        
         assert_that(CalculatorService.sqrt(self.URL, y), has_string("Error: Undefined symbol {}".format(y)))
